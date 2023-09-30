@@ -21,19 +21,23 @@ body,html {
     left: 0;
 }
 
-.background{
+/*Hero sec*/
+.header-sec{
     background-color: #000;
     color: #fff;
     display: grid;
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
+    min-height: 100vh;
+    padding-bottom: 150px;
+    padding-top: 0;
 }
 
 nav{
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;
+    margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,16 +104,16 @@ nav{
 }
 
 
-/*Hero sec*/
 .header-box{
     background-color: rgba(39, 39, 42, .5);
+    margin: auto;
     margin-top: 50px;
     padding: 50px;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: .5s;
     z-index: 9;
-    width: 100%;
+    width: 50%;
     text-align: center;
     justify-content: center;
     font-size: 1vw;
@@ -139,14 +143,15 @@ nav{
     border-radius: 15px;
     transition: .5s;
     z-index: 9;
-    width: 100%;
-    flex: 20%;
+    height: 60%;
+    flex: 10%;
 }
 
 .txt {
     margin: 50px;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: 10px;
+    font-size: 14px;
     /* border: 1px solid #fff;; */
     transition: .5s;
     z-index: 9;
@@ -163,6 +168,24 @@ nav{
     border-radius: 5px;
 }
 
+.scroll {
+    display: grid;
+    margin: auto;
+    background-color: rgba(39, 39, 42, .5);
+    height: 70px;
+    width: 70px;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+#scroll-arrow {
+    font-size: 20px;
+}
+
 @media (width < 900px){
     .nav-links{
         font-size: 10px;
@@ -176,9 +199,38 @@ nav{
 
     .header-box {
         font-size: 3vw;
+        width: 100%;
     }
     .btn {
     padding: .5rem;
     font-size: .5rem;
     }
+
+    .header-card {
+        background-color: rgba(39, 39, 42, .5);
+        margin-top: 20px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        transition: .5s;
+        z-index: 9;
+        height: 30%;
+        flex: 20%;
+    }
+    
+}
+
+.test {
+    min-height: 100vh;
+    min-width: 100vh;
+    z-index: 99999999999999;
+    display: grid;
+    justify-content: center;
+    background-color: #3e9060;
+}
+
+.cardos {
+    margin-top: 10px;
+    height: 150px;
+    background-color: green;
+    padding: 30px;
 }

@@ -81,12 +81,28 @@ particlesJS("particles", {
 
 
 $(document).ready(function(){
+    AOS.init();
 
     $(".btn").click(function(){
       $("div").animate({opacity: '0'});
     });
 
+    
 
+  
+
+
+        
+    
 
 });
 
+
+$(loop);
+
+    function loop(){
+        // $('.scroll').removeAttr('style') //reset the initial position
+        // $('.scroll').animate({'padding-top': '10px'});
+        $('.scroll').animate({'padding-bottom': '10px'}, loop);
+        console.log(document.getElementById.clientY)
+    }
